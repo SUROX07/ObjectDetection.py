@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Game</title>
+</head>
+<body>
+    <h1>Try the software!</h1>
+    <button id="startButton">Start program</button>
+    <script>
+        let gameWindow;
+
+        document.getElementById('startButton').addEventListener('click', () => {
+            fetch('/start_game', { method: 'POST' })
+                .then(response => response.text())
+                .then(message => alert(message));
+        });
+
+        window.addEventListener('beforeunload', () => {
+            if (gameWindow) {
+                gameWindow.close();
+            }
+        });
+    </script>
+</body>
+</html>
