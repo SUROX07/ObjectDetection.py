@@ -8,7 +8,7 @@ def index():
 @app.route('/start_game', methods=['POST'])
 def start_game():
     # Start the Python game here
-    subprocess.Popen(['python', './camera.py'])
+    subprocess.Popen(['python', './program/camera.py'])
     return 'Starting Detection program....'
 
 if __name__ == '__main__':
