@@ -67,7 +67,7 @@ header{
     justify-content:space-between;
     height: 100vh;
     width: 100%;
-    background: url(stp.home.bg.gif) no-repeat;
+    background: url(../images/stp.home.bg.gif) no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -398,12 +398,12 @@ header{
     
 }
 .row1{
-    background: url(Trial.png) no-repeat ;
+    background: url(../images/Trial.png) no-repeat ;
     background-size: 400px;
     background-position: center;
 }
 .row2{
-    background: url(downloads.png) no-repeat ;
+    background: url(../images/downloads.png) no-repeat ;
     background-size: 400px;
     background-position: center;
 }
